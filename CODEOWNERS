@@ -1,0 +1,25 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+#*       @global-owner1 @global-owner2
+
+# ArgoCD Application Definitions
+/argocd/dev/      @sandrews-ctl @craigdalton
+/argcd/prod/      @loudsquelch
+
+# Modifying a base affects production and therefore requires
+# approval
+/applications/*/base/        @loudsquelch
+/applications/*/*.md        @loudsquelch
+
+# Overlays
+/applications/*/overlays/dev/      @sandrews-ctl @craigdalton
+/applications/*/overlays/prod/      @loudsquelch
+
+# Documentation
+/README.md
+/CONTRIBUTING.md
+
+# Code owners file should NOT be modified without approval 
+CODEOWNERS       @loudsquelch
