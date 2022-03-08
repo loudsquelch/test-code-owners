@@ -5,8 +5,6 @@
 #*       @global-owner1 @global-owner2
 
 # ArgoCD Application Definitions
-/argocd/dev/      @sandrews-ctl @craigdalton
-/argcd/prod/      @loudsquelch @craigdalton
 
 # Modifying a base affects production and therefore requires
 # approval
