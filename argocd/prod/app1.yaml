@@ -5,7 +5,7 @@ metadata:
 spec:
   project: platform
   source:
-    repoURL: git@github.com:loudsquelch/test-code-owners.git
+    repoURL: git@github.com:loudsquelch/my-repo.git
     targetRevision: main
     path: applications/app1/overlays/prod
   destination:
