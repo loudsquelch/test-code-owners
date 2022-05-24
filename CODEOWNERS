@@ -5,21 +5,19 @@
 #*       @global-owner1 @global-owner2
 
 # ArgoCD Application Definitions
-/argocd/dev/      @sandrews-ctl @craigdalton
-/argcd/prod/      @loudsquelch
 
 # Modifying a base affects production and therefore requires
 # approval
-/applications/*/base/        @loudsquelch
-/applications/*/*.md        @loudsquelch
+/applications/*/base/        @loudsquelch @craigdalton
+/applications/*/*.md        @loudsquelch @craigdalton
 
 # Overlays
 /applications/*/overlays/dev/      @sandrews-ctl @craigdalton
-/applications/*/overlays/prod/      @loudsquelch
+/applications/*/overlays/prod/      @loudsquelch @craigdalton
 
 # Documentation
 /README.md
 /CONTRIBUTING.md
 
-# Code owners file should NOT be modified without approval 
-CODEOWNERS       @loudsquelch
+# Code owners file should NOT be modified without approval
+CODEOWNERS       @loudsquelch @craigdalton
